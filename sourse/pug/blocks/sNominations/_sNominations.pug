@@ -3,42 +3,39 @@ mixin sNominations(data)
 	+b.SECTION.sNominations.section#sNominations&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Номинации
-				.text-large Подать заявку может сотрудник от организации, которая успешно реализовала один или несколько проектов в сфере управления людьми
+				h2 Nominations
+				.text-large An employee can submit an application from an organization that has successfully implemented one or more projects in the field of management
 			+e.grid
-				+e.item.item-nomin--js: +nominationCard('Секрет удачного кадра: ', 'привлечение', '2')
+				+e.item.item-nomin--js: +nominationCard('The secret of a successful frame: ', 'Attraction', '2')
 					+b.nomination-card.nomination-card--hide
 						+e.content
 							+e.wrap.custom-scroll
-								p Отмечаются проекты, которые помогают привлечь в организацию талантливых сотрудников. Поделитесь практическими решениями, которые позволяют привлекать кадры с комфортом как для команды, так и для кандидатов!
+								p Projects are noted that help to attract talented employees to the organization.Share practical solutions that allow you to attract personnel with comfort for both the team and for candidates!
 							+icon('x')
-				+e.item.item-nomin--js: +nominationCard('В фокусе:', 'удержание', '1')
+				+e.item.item-nomin--js: +nominationCard('In focus:', 'Retention', '1')
 					+b.nomination-card.nomination-card--hide
 						+e.content
 							+e.wrap.custom-scroll
-								//- .title.text-large Молодежный карьерный проект:
-								p Такой проект помогает организации стать местом, где сотрудникам действительно хочется работать. Расскажите, как вы сделали свою команду точкой притяжения для ярких специалистов!
+								p Such a project helps the organization to become a place where employees really want to work.Tell us how you made your team a point of attraction for bright specialists!
 							+icon('x')
-				+e.item.item-nomin--js: +nominationCard('Академия талантов:', 'развитие', '2')
+				+e.item.item-nomin--js: +nominationCard('Talent Academy:', 'Development', '2')
 					+b.nomination-card.nomination-card--hide
 						+e.content
 							+e.wrap.custom-scroll
-								//- .title.text-large Молодежный карьерный проект:
-								p Ваш проект должен быть направлен на обучение ваших сотрудников, на возможности их развития. Вы внедрили эффективную систему, которая помогает специалистам раскрыть потенциал? Тогда эта номинация для вас!
+								p Your project should be aimed at training your employees, at the possibility of their development.Have you implemented an effective system that helps specialists reveal the potential?Then this nomination is for you!
 							+icon('x')
-				+e.item.item-nomin--js: +nominationCard('Новый ракурс:', 'HR-инновации', '1')
+				+e.item.item-nomin--js: +nominationCard('New angle:', 'HR-innovations', '1')
 					+b.nomination-card.nomination-card--hide
 						+e.content
 							+e.wrap.custom-scroll
-								//- .title.text-large Молодежный карьерный проект:
-								p Эта номинация для первопроходцев в области работы с персоналом. Автоматизация и цифровизация, инновационный подход и уникальные решения в области HR — все это может быть признаком того, что эта номинация создана для вашего проекта!
+								p This nomination for pioneers in the field of staff work.Automation and digitalization, an innovative approach and unique solutions in the field of HR - all this may be a sign that this nomination is created for your project!
 							+icon('x')
 				+e.item.wrapper: +b.nomination-card--white
 					+img(src=`img/svg/sNomination-2.svg`, alt="").img
 					+e.content.content
 						+e.wrap
-							.h3 У вас возник вопрос?
-						+gradientBtn('Получить консультацию').link-modal-js(href='#modal-question')
+							.h3 Did you have a question?
+						+gradientBtn('Get a consultation').link-modal-js(href='#modal-question')
 
 	// end sNominations
 

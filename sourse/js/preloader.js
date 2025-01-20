@@ -1,5 +1,5 @@
 	/* preloader */
-  const preloaderAnimDuration = 4000
+  const preloaderAnimDuration = 3000
 	let body = document.querySelector("body");
 
   body.classList.add('fixed-preloader')

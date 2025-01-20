@@ -34,16 +34,16 @@ mixin top-nav(main)
 								+mnu(false)
 							.menu-wrap.d-xl-none
 								+e.btns-wrap
-									+e.btn.btn.btn-outline-light.small(href='#') Личный кабинет
-									+e.btn.btn.btn-primary(href='#') Подать заявку
-								+e.apply.text-center.fw-600 Прием заявок до 11 июля
+									+e.btn.btn.btn-outline-light.small(href='#') Account
+									+e.btn.btn.btn-primary(href='#') Apply
+								+e.apply.text-center.fw-600 Acceptance of applications until July 11
 				.col-auto
 					+e.btns-wrap.wrap-header.d-none.d-xl-block
 						if main
-							+e.btn.btn.btn-light.small.btn-wr--js(href='#') Подать заявку
+							+e.btn.btn.btn-light.small.btn-wr--js(href='#') Apply
 						else
-							+e.btn.btn.btn-light.small(href='#') Подать заявку
-						+e.btn.btn.btn-outline-light.small(href='#') Личный кабинет
+							+e.btn.btn.btn-light.small(href='#') Apply
+						+e.btn.btn.btn-outline-light.small(href='#') Account
 				.col-auto.d-xl-none
 					+menu-toggle()
 	// end top-nav

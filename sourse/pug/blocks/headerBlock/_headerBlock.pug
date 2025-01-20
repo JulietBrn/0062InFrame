@@ -5,12 +5,12 @@ mixin headerBlock()
 			+e.row
 				+e.col.col-lg-8
 					+b.section-title
-						.h1.fw-700 Премия Правительства Москвы «В кадре»
-						+e.sub Всероссийская HR-премия для госсектора
+						.h1.fw-700 Government Prize "In the frame"
+						+e.sub HR premium for the public sector
 					+e.content 
-						+e.apply.text-large.order-lg-2 #[span Прием заявок до 11 июля]
-						.text-large.order-lg-3.span Церемония награждения — 2 октября 2025
-						+e.btn.btn.btn-primary(href='#') Подать заявку
+						//- +e.apply.text-large.order-lg-2 #[span Acceptance of applications until July 11]
+						.text-large.order-lg-3.span Award ceremony - October 2, 2025
+						+e.btn.btn.btn-primary(href='#') Apply
 				+e.col.col-lg-4
 		video(autoplay, muted, loop, playsinline, poster="img/effectsResult.jpg").section-img-bg.d-none.d-lg-block
 			source(src="img/oblojka.mp4", type="video/mp4")
@@ -18,6 +18,6 @@ mixin headerBlock()
 		+e.img-wrap-mob.d-lg-none.ms-auto
 			.bg-gr
 			+img(src="img/headerBlock-bg-mob.png", alt="")
-		+b.wrap-btn-apply.vertical-move.btn-wr--js.d-xl-none: .container: a.btn.btn-primary(href='#') Подать заявку
+		+b.wrap-btn-apply.vertical-move.btn-wr--js.d-xl-none: .container: a.btn.btn-primary(href='#') Apply
 	+b.question-wrap.vertical-move.fw-700.btn-wr--js.link-modal-js(href='#modal-question') ?
 	// end headerBlock

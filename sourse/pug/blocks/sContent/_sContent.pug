@@ -5,7 +5,7 @@ mixin sContent()
 			.inner-wrapper.inner-wrapper_white
 				+b.section-title--flex
 					+img(src="img/svg/hr.svg", alt="").logo
-					h2 Организатор
+					h2 Organizer
 				+e.item
 					.text.text-large Мы, так же как и вы, стремимся формировать лучшую систему поддержки для своих команд. Ведь динамика, скорость, актуальность, клиентоцентричность и высокие стандарты качества — это #[span ориентиры, которые важны тысячам] наших коллег по всей стране.
 					.h3 И мы готовы вместе с вами развиваться, обмениваться знаниями и находить новые решения в сфере работы с людьми.
@@ -17,21 +17,16 @@ mixin sContent2()
 	+b.SECTION.sContent.section#sContent2&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Полезные материалы
+				h2 Useful materials
 			+e.row.row
 				+e.col.col-lg-6
-					+cardLinkMaterials('Положение о Премии')
+					+cardLinkMaterials('Award Regulations')
 				+e.col.col-lg-6
-					+cardLinkMaterials('Памятка участника')
+					+cardLinkMaterials('Participant Guide')
 				+e.col.col-lg-6
-					+cardLinkMaterials('Образец заполненной заявки')
+					+cardLinkMaterials('Sample Completed Application')
 				+e.col.col-lg-6
-					+cardLinkMaterials('Презентация о Премии')
-				//- +e.col.col-lg-6
-				//- 	+b.card-material(href='#')
-				//- 		+e.text.text-large Политика<br>Конфиденциальности
-				//- 		+icon('arr-next')
-
+					+cardLinkMaterials('Award Presentation')
 
 mixin cardLinkMaterials(t)
 	+b.card-material(href='#')&attributes(attributes)
@@ -44,6 +39,6 @@ mixin sContent3()
 	+b.SECTION.sContent.section#sContent3&attributes(attributes)
 		.container
 			+b.section-title.section-title_smaller
-				.h3 Расскажите об HR-проекте своей команды — станьте лидерами в области управления персоналом в госсекторе
-				+gradientBtn('Памятка участника')(download)
+				.h3 Tell us about the HR project of your team-become leaders in the field of personnel management in the state sector
+				+gradientBtn('Participant Guide')(download)
 					+icon('download')

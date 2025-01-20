@@ -4,12 +4,12 @@ mixin sHeroes(data)
 		.container
 			.inner-wrapper.inner-wrapper_white
 				+b.section-title
-					h2 Главные герои
-					.text-large Команды соревнуются только внутри своей категории.
+					h2 The main characters
+					.text-large Teams compete only inside their category.
 				+e.grid
-					+heroesCard('ФЕДЕРАЦИЯ','Федеральные органы исполнительной власти и подведомственные им организации, госкорпорации и компании с госучастием','1')
-					+heroesCard('РЕГИОН','Региональные органы исполнительной власти и подведомственные им организации, а также органы местного самоуправления и подведомственные им учреждения','2')
-					+heroesCard('СТОЛИЦА','Исполнительные органы власти и подведомственные им организации города Москвы','3')
+					+heroesCard('Federation','Federal executive bodies and their subordinate organizations, state corporations and companies with state participation','1')
+					+heroesCard('Region','Regional executive bodies and their subordinate organizations, as well as local governments and institutions subordinate to them','2')
+					+heroesCard('Capital','Executive authorities and their subordinate organizations of the city','3')
 	// end sHeroes
 
 mixin heroesCard(title, p, img)
@@ -24,18 +24,18 @@ mixin sHeroes2(data)
 		.container
 			.inner-wrapper.inner-wrapper_white
 				+b.section-title
-					h2 Премия «В кадре» — это
+					h2 The "In the frame" award is
 				+e.row.row
 					+e.col.col-lg-4
-						+cardHeroesIcon(1, 'Возможность занять почетное место среди ведущих команд России в госсекторе')
+						+cardHeroesIcon(1, 'The opportunity to take an honorable place among leading teams')
 					+e.col.col-lg-4
-						+cardHeroesIcon(2, 'Признание экспертизы сотрудников государственных организаций')
+						+cardHeroesIcon(2, 'Recognition of an examination of employees of state organizations')
 					+e.col.col-lg-4
-						+cardHeroesIcon(3, 'Экспертное мнение и ценная обратная связь для проектов')
+						+cardHeroesIcon(3, 'Expert opinion and valuable feedback for projects')
 					+e.col.col-lg-4
-						+cardHeroesIcon(4, 'Поддержка на крупнейших информационных площадках')
+						+cardHeroesIcon(4, 'Support at the largest information platforms')
 					+e.col.col-lg-4
-						+cardHeroesIcon(5, 'Возможности для партнерства с лидерами отрасли и их командами')
+						+cardHeroesIcon(5, 'Opportunities for partnership with the leaders of the industry and their teams')
 
 mixin cardHeroesIcon(i, text)
 	+b.card-heroes-icon 

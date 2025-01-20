@@ -6,26 +6,26 @@ mixin footer()
 					+e.wrap
 						+e.logo-wrap
 							a(href="#"): +img(src="img/svg/logo-white.svg", alt="")
-							a(href="#"): +img(src="img/svg/hr-white.svg", alt="")
+							//- a(href="#"): +img(src="img/svg/hr-white.svg", alt="")
 						ul 
-							li: a(href="#").link Положение о Премии
-							li: a(href="#").link Пользовательское соглашение
+							li: a(href="#").link Award Regulations
+							li: a(href="#").link User agreement
 				+e.col.col-lg-6
-					+linkItem('Адрес')
-						a(href="#") Москва, Тверская, 13
-					+linkItem('Контактный телефон')
-						a(href="tel:+74959577575") +7 (495) 957-75-75
-					+linkItem('Общие вопросы')
-						a(href="mailto:vkadre-info@mos.ru") vkadre-info@mos.ru
-					+linkItem('Пиар и партнерство')
-						a(href="mailto:pr-vkadre@mos.ru") pr-vkadre@mos.ru
+					//- +linkItem('Address')
+					//- 	a(href="#") Tverská 13,
+					+linkItem('Contact phone')
+						a(href="tel:+421 940 957-775") +421 940 957-775
+					+linkItem('Common questions')
+						a(href="mailto:frame-info@os.com") frame-info@os.com
+					+linkItem('PR and partnership')
+						a(href="mailto:pr-frame@os.com") pr-frame@os.com
 
 			+e.bottom-row.row
 				+e.col.col-lg-6
-					+e.copyr.small © 2025 Управление кадровых сервисов Правительства Москвы
-				+e.col.col-lg-6
-					a(href="#").small Версия для слабовидящих
-						+icon('noun-glasses') 
+					+e.copyr.small © 2025 Management of personnel services
+				//- +e.col.col-lg-6
+				//- 	a(href="#").small Version for visually impaired
+				//- 		+icon('noun-glasses') 
 
 mixin linkItem(t)
 	+b.link-item 

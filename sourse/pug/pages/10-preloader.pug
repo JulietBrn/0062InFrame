@@ -4,6 +4,8 @@ extends ../layout/main-preload.pug
 include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sContent/_sContent.pug
+include ../blocks/sNominations/_sNominations.pug
+include ../blocks/sAwards/_sAwards.pug
 include ../blocks/footer/_footer.pug
 include ../blocks/sAbout/_sAbout.pug
 
@@ -21,8 +23,8 @@ block pagecontent
 	
 	+parts('header-main')
 	main
-		+headerBlock 
-		+sContent3
-		+sAbout
-		+sContent2
+		//- +headerBlock 
+		section.section
+		+sNominations
+		+sAwards
 	+footer().--wide

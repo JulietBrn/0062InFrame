@@ -3,36 +3,36 @@ mixin sAwards(data)
 	+b.SECTION.sAwards.section#sAwards&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Награды
-				.text-large Определим 36 лауреатов
+				h2 Awards
+				.text-large We determine 36 laureates
 			+e.row.row
 				- const wrapClass="col-lg-4"
 				+e.col(class= wrapClass)
-					+awardCard('Первое место', '').--yellow
+					+awardCard('First place', '').--yellow
 						+img(src="img/award.png", alt="").award
 						+img(src="img/svg/stars-yellow.svg", alt="").stars-yellow
 						ul
-							li.span #[span 48 млн рублей — общий призовой фонд]
-							li Диплом 1-й степени
-							li Фирменная статуэтка
-							li Приглашение на церемонию награждения
-							li Публикация видео и проекта
+							li.span #[span General prize pool]
+							li 1st degree diploma
+							li Branded figurine
+							li Invitation to the award ceremony
+							li Publication Video and Project
 				+e.col(class= wrapClass)
-					+awardCard('Второе место', '')
+					+awardCard('Second place', '')
 						+img(src="img/svg/stars.svg", alt="").stars
 						ul
-							li Диплом 2-й степени
-							li Статуэтка Премии
-							li Подарки от организаторов и партнеров
+							li 2nd degree diploma
+							li Prize figurine
+							li Gifts from organizers and partners
 				+e.col(class= wrapClass)
-					+awardCard('Третье место', '')
+					+awardCard('Third place', '')
 						+img(src="img/svg/stars.svg", alt="").stars.stars_rotate.d-lg-none
 						+img(src="img/svg/star-big.svg", alt="").stars.star-big.d-none.d-lg-inline
 						ul
-							li Диплом 3-й степени
-							li Статуэтка Премии
-							li Подарки от организаторов и партнеров
-			.text-large Подробнее о распределении призового фонда можно узнать в разделе #[a(href='#') Правила].
+							li 3rd degree diploma
+							li Prize figurine
+							li Gifts from organizers and partners
+			.text-large More information about the distribution of the prize fund can be found in the section #[a(href='#') Rules].
 	// end sAwards
 
 mixin awardCard(t, img)

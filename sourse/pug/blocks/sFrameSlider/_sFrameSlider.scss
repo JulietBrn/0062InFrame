@@ -7,11 +7,6 @@
   }
 
   --sPB: #{rem(36)};
-	
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
-	}
 
   .swiper-slide {
     height: auto;
@@ -33,15 +28,10 @@
   .swiper-wrapper {
     padding: rem(57) rem(32);
     @include media-breakpoint-up(lg) {
-      padding: rem(80) rem(56);
-      padding-bottom: rem(100);}
+      padding: rem(60) rem(56);
+      padding-bottom: rem(100);
+    }
   }
-
-  // &__slider--js {
-  //   @include media-breakpoint-up(lg) {
-  //     transform: translateX(20px);
-  //   }
-  // }
 
   .parallax-bg {
     position: absolute;
@@ -57,6 +47,7 @@
     border-top-left-radius: rem(32);
     @include media-breakpoint-up(lg) {
       width: 122%;
+      height: 95%;
       border-top-left-radius: rem(64);
     }
 
@@ -96,7 +87,7 @@
   width: rem(270);
 	@include media-breakpoint-up(lg) {
     // justify-content: space-between;
-    min-height: rem(380);
+    min-height: rem(360);
     gap: rem(40);
     width: rem(508);
     padding: rem(20);

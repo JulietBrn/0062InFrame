@@ -10,7 +10,7 @@ body {
 }
 
 #preloader {
-  --preloader-anim-duration: 4s;
+  --preloader-anim-duration: 3s;
 
   @include media-breakpoint-down(md) {
     .preloader-logo {
@@ -130,7 +130,7 @@ body {
   0% {
     transform: scale(.8);
   }
-  80% {
+  50% {
     transform: scale(.8);
   }
   100% {
@@ -142,7 +142,7 @@ body {
   0% {
     transform: scale(0.25);
   }
-  60% {
+  50% {
     transform: scale(1);
   }
   80% {
@@ -160,7 +160,7 @@ body {
   60% {
     transform: scale(1);
   }
-  80% {
+  50% {
     transform: scale(1) translateX(-100px);
   }
   100% {
@@ -172,7 +172,7 @@ body {
   0% {
     transform: scale(0.25);
   }
-  60% {
+  50% {
     transform: scale(1);
   }
   100% {
@@ -194,11 +194,11 @@ body {
 
 @keyframes text-slide {
   0%,
-  60% {
+  40% {
     transform: scale(.8) translateX(-50%);
     opacity: 0;
   }
-  80% {
+  50% {
     transform: scale(.8) translateX(0);
     opacity: 1;
   }

@@ -5,33 +5,33 @@ mixin sForm()
 			.inner-wrapper.inner-wrapper_white: +e.row.row
 				+e.col.col-lg-6 
 					+b.section-title
-						h2 Связаться с нами
-						.text-large Расскажем, как заполнить и подать заявку, проконсультируем по проекту и ответим на все вопросы
+						h2 Contact us
+						.text-large We will tell you how to fill out and submit an application, consult by the project and answer all questions
 					+img(src="img/sForm-bg.png", alt="").img.d-none.d-lg-block
 				+e.col.col-lg-6
-					.title.text-secondary.required Как вы хотите получить консультацию?
+					.title.text-secondary.required How do you want to get a consultation?
 					.tabs.tabs-form
 						.item.tabs__caption.small
-							.tabs__btn.active По телефону
-							.tabs__btn Письмом на почту
+							.tabs__btn.active By phone
+							.tabs__btn By email
 
 						.tabs__content.active
 							+form-wrap
-								+input("Ваше Ф.И.О.",'text')(required)
-								+input("Телефон",'tel')(required)
-									.text.text-indigo.small Если вы вписываете рабочий телефон с добавочным номером, укажите его в поле ниже.
-								+input("Напишите сообщение",'textarea')
-								.title.text-secondary.required Введите символы с картинки
+								+input("Your Full Name",'text')(required)
+								+input("Phone",'tel')(required)
+									.text.text-indigo.small If you are entering a work phone number with an extension, please specify it in the field below.
+								+input("Message",'textarea')
+								.title.text-secondary.required Enter the characters from the image
 								.capture-wrap
 								+policy
-								+e.btn.btn.btn-primary(type="submit") Отправить
+								+e.btn.btn.btn-primary(type="submit") Send
 						.tabs__content
 							+form-wrap
-								+input("Ваше Ф.И.О.",'text')(required)
-								+input("Адрес вашей почты",'email')(required)
-								+input("Напишите сообщение",'textarea')
-								.title.text-secondary.required Введите символы с картинки
+								+input("Your Full Name",'text')(required)
+								+input("Email",'email')(required)
+								+input("Message",'textarea')
+								.title.text-secondary.required Enter the characters from the image
 								.capture-wrap
 								+policy
-								+e.btn.btn.btn-primary(type="submit") Отправить
+								+e.btn.btn.btn-primary(type="submit") Send
 	// end sForm

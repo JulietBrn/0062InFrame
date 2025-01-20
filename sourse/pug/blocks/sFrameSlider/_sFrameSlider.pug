@@ -3,19 +3,18 @@ mixin sFrameSlider(data)
 	+b.SECTION.sFrameSlider.section#sFrameSlider&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Раскадровка
+				h2 Storyboard
 			+e.slider--js.swiper
 				.parallax-bg(style="background-image: url('img/svg/parallax.svg')" data-swiper-parallax="-10%").d-none.d-lg-block
 				.parallax-bg(style="background-image: url('img/svg/parallax-mob.svg')" data-swiper-parallax="-20%").d-lg-none
 
 				.swiper-wrapper
-					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Кадр 1','148 дней','13 февраля — 11 июля','Прием заявок','Участники вносят данные о проекте в личном кабинете на сайте Премии')
-						//- +e.text Узнайте об этапах и правилах подачи заявок в #[a(href="#") чек-листе участника]
-						+e.btn.btn.btn-light(href='#') Подать заявку
-					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Кадр 2','20 дней','14 июля — 3 августа','Техническая экспертиза','Мы обрабатываем заявки и определяем 240 номинантов')
-					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Кадр 3','27 дней','4 августа — 7 сентября','Экспертная комиссия','Эксперты выбирают 60 финалистов — информацию о командах и их проектах мы публикуем на сайте Премии. Финалистов приглашаем на церемонию награждения')
-					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Кадр 4','13 дней','8 сентября — 21 сентября','Голосование жюри','Жюри определяет 36 лауреатов — из них 12 победителей')
-					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Кадр 5','Очно в Москве','2 октября','Премьера','Приветствуем финалистов, награждаем лауреатов и победителей на торжественной церемонии в «Москве-Сити», башня «Федерация»').--primary
+					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Frame 1','148 days','February 13 - July 11','Acceptance of applications','Participants enter data on the project in the Personal Account on the Prize website')
+						+e.btn.btn.btn-light(href='#') Apply
+					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Frame 2','20 days','July 14 - August 3','Technical examination','We process applications and determine 240 nominees')
+					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Frame 3','27 days','August 4 - September 7','Expert commission','Experts choose 60 finalists.Finalists we invite the award ceremony')
+					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Frame 4','13 days','September 8 - September 21','The jury voting','The jury determines 36 laureates - of which 12 winners')
+					.swiper-slide(data-swiper-parallax="-300"): +frameSlide('Frame 5','Offline','October 2','Premiere','We welcome the finalists, reward laureates and winners at the ceremony in City').--primary
 						+img(src="img/svg/stars.svg", alt="").stars.stars_rotate
 	// end sFrameSlider
 
